@@ -17,10 +17,23 @@ class DemoApplicationTests {
     UserRegisterService service;
 
 
-
     @Test
     void contextLoads() {
         service.registerUser("jack");
+    }
+
+
+    @Test
+    void test2() {
+        int i = 1;
+        int j = 1;
+        int a = i++;
+
+        int b = ++j;
+
+        System.out.println(a + "-----" + b);
+
+        System.out.printf(i+"----"+j);
     }
 
 }
