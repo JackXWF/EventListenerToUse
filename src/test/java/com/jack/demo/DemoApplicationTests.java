@@ -20,10 +20,6 @@ class DemoApplicationTests {
 
     @Test
     void contextLoads() {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(MainConfig2.class);
-        context.refresh();
-
         service.registerUser("Jack");
     }
 
