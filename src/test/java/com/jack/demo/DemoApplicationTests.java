@@ -20,7 +20,7 @@ class DemoApplicationTests {
 
     @Test
     void contextLoads() {
-        service.registerUser("Jack");
+        service.registerUser("jack");
     }
 
 }
