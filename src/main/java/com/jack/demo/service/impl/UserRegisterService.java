@@ -1,4 +1,4 @@
-package com.jack.demo.service;
+package com.jack.demo.service.impl;
 
 
 import com.jack.demo.register.UserRegisterEvent;
