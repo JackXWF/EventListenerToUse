@@ -4,9 +4,12 @@ import com.jack.demo.entity.Person;
 import com.jack.demo.service.IPersonService;
 import com.jack.demo.service.impl.UserRegisterService;
 import com.jack.demo.test.TableInfoContext;
+import com.jack.demo.test.Test3;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.time.LocalDate;
 
 @SpringBootTest(classes = DemoApplication.class)
 class DemoApplicationTests {
@@ -16,6 +19,9 @@ class DemoApplicationTests {
 
     @Autowired
     IPersonService personService;
+
+    @Autowired
+    Test3 test3;
 
 
     @Test
@@ -48,6 +54,22 @@ class DemoApplicationTests {
         person.setName("KFC");
 
         personService.save(person);
+    }
+
+
+    @Test
+    void test5() {
+        LocalDate localDate = LocalDate.now().minusMonths(1);
+
+        System.out.printf(localDate.toString());
+
+    }
+
+
+    @Test
+    void test6() {
+        test3.compute();
+        test3.compute2();
     }
 
 }

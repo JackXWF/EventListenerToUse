@@ -13,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IPersonService extends IService<Person> {
 
+    void compute();
+
+    void compute2();
 }
