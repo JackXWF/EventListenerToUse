@@ -24,13 +24,17 @@ import org.springframework.stereotype.Service;
 public class PersonServiceImpl extends ServiceImpl<PersonMapper, Person> implements IPersonService {
 
 
-    private final CommonSetValue commonSetValue;
+   /* private final CommonSetValue commonSetValue;
 
 
     @Autowired
     public PersonServiceImpl(CommonSetValue commonSetValue) {
         this.commonSetValue = commonSetValue;
-    }
+    }*/
+
+
+    @Autowired
+    CommonSetValue commonSetValue;
 
 
     @Override
