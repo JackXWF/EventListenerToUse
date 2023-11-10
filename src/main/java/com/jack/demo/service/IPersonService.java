@@ -16,4 +16,6 @@ public interface IPersonService extends IService<Person> {
     void compute();
 
     void compute2();
+
+    void getCommonData();
 }

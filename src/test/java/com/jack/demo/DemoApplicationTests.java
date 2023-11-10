@@ -72,4 +72,11 @@ class DemoApplicationTests {
         test3.compute2();
     }
 
+
+
+    @Test
+    void test7(){
+        personService.getCommonData();
+    }
+
 }
